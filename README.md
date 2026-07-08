@@ -17,7 +17,7 @@
 
 ### 🚀 About Me
 
-- 🎓 BCA graduate from Ahmedabad, Gujarat, India
+- 🎓 BCA graduate from Rajkot, Gujarat, India
 - 🔄 Started in full-stack development (internship at **Bytes Bizz**), now fully focused on **cybersecurity**
 - 🛡️ Currently building practical SOC analyst skills through a **self-built home lab**
 - 🎯 Goal: land my first role as a **SOC Analyst / SOC Intern**
