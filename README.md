@@ -31,13 +31,7 @@
 I built a 4-VM Active Directory + Splunk detection lab from the ground up (domain: `mydfir.local`) to practice real detection engineering instead of just watching tutorials:
 
 - **Ubuntu + Splunk** (SIEM server) · **Windows Server 2022** (Domain Controller) · **Windows 10** (target endpoint) · **Kali Linux** (attacker box)
-- Simulated real attack techniques using **Atomic Red Team**, mapped to MITRE ATT&CK:
-  - `T1136.001` — Account creation/manipulation (Event IDs 4720, 4726, 4732)
-  - `T1059.001` — PowerShell abuse
-  - `T1003.001` — Credential dumping (LSASS)
-  - `T1110.001` — Password brute-forcing
-- Writing **manual SPL detections** (not copy-pasted) for things like RDP brute-force attempts
-- Using **Splunk Security Essentials** as a self-checking tool to validate my own queries
+  
 
 > This is a learning lab, not production experience — but every detection here was built and understood from first principles.
 
