@@ -29,6 +29,11 @@
 ### 🏠 Home Lab — Self-Built SOC Environment
 
 I built a 4-VM Active Directory + Splunk detection lab from the ground up (domain: `mydfir.local`) to practice real detection engineering instead of just watching tutorials:
+- Configured Active Directory domain (mydfir.local) with organizational units, domain users, and Group Policy — resolving complex network issues including IP conflicts, DHCP/static IP mismatches, and NAT Network connectivity between VMs
+- Executed RDP brute-force attack from Kali Linux using Crowbar and Hydra against a domain-joined Windows target; diagnosed and documented false-positive/false-negative behavior in both tools against modern Windows Server targets
+- Validated successful credential exploitation manually using xfreerdp, confirming unauthorized RDP access using weak domain credentials — demonstrating real-world impact of poor password hygiene
+- Simulated MITRE ATT&CK technique T1136.001 (Create Local Account) using Atomic Red Team on a domain-joined Windows 10 endpoint; detected resulting Windows Security Event IDs (4720, 4726, 4732) in Splunk
+- Wrote SPL queries in Splunk to identify attack evidence including account creation, privilege escalation, and group membership changes across endpoint logs
 
 - **Ubuntu + Splunk** (SIEM server) · **Windows Server 2022** (Domain Controller) · **Windows 10** (target endpoint) · **Kali Linux** (attacker box)
   
